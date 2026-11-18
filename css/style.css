@@ -1,0 +1,314 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+button {
+    cursor: pointer;
+}
+
+body {
+    background: #ffffff;
+    color: #333333;
+}
+
+.wrap {
+    width: 100%;
+    height: 920px;
+    position: relative;
+    min-width: 1200px;
+}
+
+.top {
+    width: 100%;
+    height: 800px;
+    display: flex;
+}
+
+header {
+    width: 200px;
+    height: 800px;
+    padding: 50px 0;
+}
+
+header h2 {
+    margin-bottom: 50px;
+}
+
+.logo a {
+    display: block;
+}
+
+nav {
+    padding: 0 20px;
+}
+
+nav>ul>li {
+    position: relative;
+}
+
+nav>ul>li>a {
+    display: block;
+    background: #eeeeee;
+    color: #333333;
+    padding: 10px;
+}
+
+nav>ul>li:hover>a,
+nav>ul>li.on>a,
+nav>ul>li>a:focus {
+    background: #442211;
+    color: #ffffff;
+}
+
+.sub {
+    position: absolute;
+    width: 1000px;
+    top: 0;
+    left: 160px;
+    z-index: 10;
+    display: none;
+}
+
+.sub a {
+    display: block;
+    padding: 10px;
+    width: 200px;
+}
+
+.sub li {
+    display: inline-block;
+}
+
+.sub li:hover,
+.sub li:focus {
+    background: #442211;
+    color: #ffffff;
+}
+
+.menubg {
+    position: absolute;
+    z-index: 9;
+    background: rgba(200, 200, 200, 0.8);
+    width: calc(100% - 180px);
+    height: 176px;
+    top: 140px;
+    left: 180px;
+    display: none;
+}
+
+.contents {
+    width: calc(100% - 200px);
+    height: 800px;
+}
+
+.slide {
+    width: 100%;
+    height: 400px;
+    position: relative;
+}
+
+.slide ul li {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.slide a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slidetext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 30px;
+    background: rgba(200, 200, 200, 0.7);
+    transform: translate(-50%, -50%);
+    padding: 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.s1 {
+    background: url(../img/slide1.jpg) no-repeat center/cover;
+}
+
+.s2 {
+    background: url(../img/slide2.jpg) no-repeat center/cover;
+}
+
+.s3 {
+    background: url(../img/slide3.jpg) no-repeat center/cover;
+}
+
+.banner {
+    width: 100%;
+    height: 400px;
+}
+
+.direct {
+    width: 100%;
+    height: 150px;
+    background: #eeeeee;
+}
+
+.direct ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    text-align: center;
+}
+
+.direct a {
+    display: block;
+}
+
+.con {
+    width: 100%;
+    height: 250px;
+    background: #dddddd;
+}
+
+.con>ul {
+    display: flex;
+    padding: 20px;
+}
+
+.con>ul>li {
+    width: 50%;
+    height: 250px;
+}
+
+.con h2 {
+    background: #cccccc;
+    width: 150px;
+    padding: 10px;
+    height: 50px;
+    text-align: center;
+}
+
+.tabcon {
+    background: #cccccc;
+    height: 160px;
+}
+
+.notice {
+    padding: 10px;
+}
+
+.notice tr {
+    border-bottom: 1px solid #333333;
+}
+
+.notice th {
+    text-align: left;
+    padding: 5px;
+}
+
+.notice a {
+    display: block;
+}
+
+.gal ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+
+.gal a {
+    display: block;
+}
+
+.gal img:hover {
+    opacity: 0.5;
+}
+
+.popup {
+    position: absolute;
+    background: #ffffff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 250px;
+    width: 600px;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #333333;
+    z-index: 9999;
+    display: none;
+}
+
+.popup h2 {
+    margin-bottom: 20px;
+}
+
+.popup p {
+    margin-bottom: 20px;
+}
+
+.button {
+    text-align: right;
+}
+
+footer {
+    width: 100%;
+    height: 120px;
+    background: #aaaaaa;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footleft {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    padding: 30px 10px;
+    gap: 10px;
+}
+
+.footmenu ul {
+    display: flex;
+    gap: 10px;
+}
+
+.footmenu a {
+    display: block;
+}
+
+.footmenu li {
+    border-right: 1px solid #333333;
+    padding-right: 10px;
+}
+
+.footmenu li:last-child {
+    border-right: none;
+}
+
+.footfamily {
+    padding: 45px
+}
