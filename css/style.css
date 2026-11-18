@@ -102,8 +102,8 @@ nav>ul>li>a:focus {
     display: inline-block;
 }
 
-.sub li:hover,
-.sub li:focus {
+.sub li a:hover,
+.sub li a:focus {
     background: #442211;
     color: #ffffff;
 }
@@ -130,10 +130,16 @@ nav>ul>li>a:focus {
     position: relative;
 }
 
+.slide ul {
+    width: 100%;
+    height: 100%;
+}
+
 .slide ul li {
     position: absolute;
     width: 100%;
     height: 100%;
+    display: none;
 }
 
 .slide a {
@@ -154,15 +160,16 @@ nav>ul>li>a:focus {
     border-radius: 10px;
 }
 
-.s1 {
+.slide ul li.s1 {
     background: url(../img/slide1.jpg) no-repeat center/cover;
+    display: block;
 }
 
-.s2 {
+.slide ul li.s2 {
     background: url(../img/slide2.jpg) no-repeat center/cover;
 }
 
-.s3 {
+.slide ul li.s3 {
     background: url(../img/slide3.jpg) no-repeat center/cover;
 }
 
